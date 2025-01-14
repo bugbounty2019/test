@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" id="mySvg">
     <script type="application/ecmascript">
         <![CDATA[
-            function drawCircle() {
+            window.addEventListener('load', function() {
                 var svg = document.getElementById('mySvg');
                 var circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
                 circle.setAttribute('cx', 100);
@@ -9,8 +9,7 @@
                 circle.setAttribute('r', 50);
                 circle.setAttribute('fill', 'red');
                 svg.appendChild(circle);
-            }
-            window.onload = drawCircle;
+            });
         ]]>
     </script>
 </svg>
